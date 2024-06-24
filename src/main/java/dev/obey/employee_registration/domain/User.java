@@ -30,7 +30,7 @@ public class User {
     )
     private Collection<Role> roles;
 
-    public User(String firstName, String lastName, String email, String encode, List<Role> roleUser) {
+    public User(String firstName, String lastName, String email, String password, List<Role> roles) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;

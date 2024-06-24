@@ -28,11 +28,14 @@ public class SecurityConfig {
         @Bean
         public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
             http.csrf().disable()
-                    .authorizeHttpRequests((authorize) ->
+                    .authorizeHttpRequests(
+                            (authorize) ->
                             authorize.requestMatchers("/registration**").permitAll()
+                                   // .requestMatchers("/") .hasRole("user") //mycode
                                     .requestMatchers("/js/**").permitAll()
                                     .requestMatchers("/css/**").permitAll()
                                     .requestMatchers("/img/**").permitAll()
+                                    .anyRequest().hasAnyAuthority("ROLE_USER")  //mycode
                     ).formLogin(
                             form -> form
                                     .loginPage("/login")
@@ -41,8 +44,11 @@ public class SecurityConfig {
                             logout -> logout
                                     .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                                     .permitAll()
-                    );
+
+                            );
+
             return http.build();
+
         }
 
         @Autowired

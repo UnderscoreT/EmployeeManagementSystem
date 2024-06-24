@@ -1,9 +1,6 @@
 package dev.obey.employee_registration.domain;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
 
 @Entity
 

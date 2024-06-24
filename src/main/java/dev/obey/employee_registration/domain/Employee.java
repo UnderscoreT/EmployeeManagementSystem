@@ -23,7 +23,7 @@ import lombok.NoArgsConstructor;
         private String firstName;
         @Column(name= "last_name")
         private String lastName;
-        @Column(name= "emal")
+        @Column(name= "email")
         private String email;
 
 

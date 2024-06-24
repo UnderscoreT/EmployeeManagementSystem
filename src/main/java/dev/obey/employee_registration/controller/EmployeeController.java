@@ -21,9 +21,10 @@ public class EmployeeController {
 
     @GetMapping("/" )
     public String viewHomePage(Model model){
-        //model.addAttribute("listEmployees", employeeService.getEmployees());
-        //return  "index";
-        return findPaginated(1, model);
+        model.addAttribute("listEmployees", employeeService.getEmployees());
+//        return  "index";
+        //return findPaginated(1, model);
+        return "home";
     }
     @GetMapping("/showNewEmployeeForm")
     public String showNewEmployeeForm(Model model){
@@ -53,18 +54,18 @@ public class EmployeeController {
      }
 
 
-     @GetMapping("/page/{pageNo}")
-     public String findPaginated(@PathVariable(value = "pageNo") int pageNo, Model model){
-        int pageSize =5;
-
-        Page<Employee> page= employeeService.findPaginated(pageNo, pageSize);
-        List<Employee> listEmployees = page.getContent();
-
-        model.addAttribute("currentPage", pageNo);
-        model.addAttribute("totalPages", page.getTotalPages());
-        model.addAttribute("totalItems", page.getTotalElements());
-        model.addAttribute("listEmployees", listEmployees);
-        return "index";
-     }
+//     @GetMapping("/page/{pageNo}")
+//     public String findPaginated(@PathVariable(value = "pageNo") int pageNo, Model model){
+//        int pageSize =5;
+//
+//        Page<Employee> page= employeeService.findPaginated(pageNo, pageSize);
+//        List<Employee> listEmployees = page.getContent();
+//
+//        model.addAttribute("currentPage", pageNo);
+//        model.addAttribute("totalPages", page.getTotalPages());
+//        model.addAttribute("totalItems", page.getTotalElements());
+//        model.addAttribute("listEmployees", listEmployees);
+//        return "index";
+//     }
 
 }
