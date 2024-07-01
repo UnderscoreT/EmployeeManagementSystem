@@ -5,17 +5,17 @@ The logged in user can do all crud operations.
 It uses the following list of technologies
     
      front end 
-        * HTML
-        * CSS
-        * BOOTSTRAP
+        1 HTML
+        2 CSS
+        3 BOOTSTRAP
      
      
       
 
     Backend
-     * Java
-      * Springboot, Spring mvc, data jpa
+      1 Java
+      2 Springboot, Spring mvc, data jpa
 
     Database
-    * Mysql
+       Mysql
     
