@@ -4,11 +4,13 @@ The logged in user can do all crud operations.
 ***
 <p> It uses the following list of technologies</p>
     
-     <p>front end </p>
+     <p>front end 
+        1.HTML
+        2.CSS
+        3.BOOTSTRAP
+     </p>
      
-      * 1.HTML
-      * 2.CSS
-      * 3.BOOTSTRAP
+      
 
     * Backend
     1.Java
