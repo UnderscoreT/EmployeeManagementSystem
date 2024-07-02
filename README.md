@@ -17,7 +17,7 @@ It uses the following list of technologies
 
    ### Backend  ###
       1 Java
-      2 Springboot, Spring mvc, data jpa, security
+      2 Springboot, Spring mvc, data jpa, thymeleaf, spring security
 
    ### Database ###
        Mysql
