@@ -6,7 +6,7 @@
  <p>The logged in user can do all _crud_ operations. </p>
 
 
-<p>It uses the following list of technologies.  </p> 
+## Technologies ## 
     
 ### Front end ###
         - HTML 
