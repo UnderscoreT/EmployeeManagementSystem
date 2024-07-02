@@ -16,9 +16,9 @@
       
 
    ### Backend  ###
-      1 Java
-      2 Springboot, Spring mvc, data jpa, thymeleaf, spring security
+      - Java
+      - Springboot, Spring mvc, data jpa, thymeleaf, spring security
 
    ### Database ###
-       Mysql
+      - Mysql
     
