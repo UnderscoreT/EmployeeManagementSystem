@@ -8,9 +8,9 @@
 <p>It uses the following list of technologies  </p>
     
 ### Front end ###
-        * HTML *
-        * CSS *
-        * BOOTSTRAP *
+        - HTML 
+        - CSS 
+        - BOOTSTRAP 
      
      
       
